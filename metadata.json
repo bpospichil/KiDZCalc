@@ -1,0 +1,6 @@
+{
+  "name": "KidZCalc",
+  "description": "Educational Android calculator game for kids with missing-number math problems, retro pixel themes, and chiptune music.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
