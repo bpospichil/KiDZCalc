@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "br.com.pospichil.kid.twa",
+    "sha256_cert_fingerprints": ["7C:49:9C:58:15:D8:69:B9:55:F2:89:B9:7F:23:47:84:57:4B:2A:AA:91:71:61:9A:1B:EC:8C:A4:93:74:18:10"]
+  }
+}]
