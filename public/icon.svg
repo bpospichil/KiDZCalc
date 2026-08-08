@@ -1,18 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" rx="112" fill="#0f172a"/>
-  <rect x="32" y="32" width="448" height="448" rx="96" fill="#1e293b" stroke="#f59e0b" stroke-width="12"/>
-  
-  <!-- Emerald Gem Frame -->
-  <rect x="96" y="80" width="320" height="120" rx="24" fill="#065f46" stroke="#34d399" stroke-width="8"/>
-  <text x="256" y="155" font-family="monospace, sans-serif" font-weight="900" font-size="52" fill="#fef3c7" text-anchor="middle">KidZCalc</text>
-  
-  <!-- Math Block Buttons -->
-  <rect x="96" y="240" width="140" height="100" rx="20" fill="#0284c7" stroke="#38bdf8" stroke-width="6"/>
-  <text x="166" y="308" font-family="sans-serif" font-weight="bold" font-size="56" fill="#ffffff" text-anchor="middle">+</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" shape-rendering="crispEdges">
+  <defs>
+    <style>
+      .bg-dark { fill: #0d2818; }
+      .bg-mid { fill: #164027; }
+      .bg-light { fill: #1e5233; }
+      .soil-dark { fill: #24140a; }
+      .soil-mid { fill: #382012; }
+      .soil-top { fill: #183321; }
+      .calc-body { fill: #23789b; }
+      .calc-dark { fill: #164e66; }
+      .calc-screen { fill: #a2d2a2; }
+      .text-white { fill: #ffffff; font-family: 'Courier New', monospace; font-weight: 900; }
+    </style>
+  </defs>
 
-  <rect x="276" y="240" width="140" height="100" rx="20" fill="#d97706" stroke="#fbbf24" stroke-width="6"/>
-  <text x="346" y="308" font-family="sans-serif" font-weight="bold" font-size="56" fill="#ffffff" text-anchor="middle">−</text>
+  <!-- Outer Dark Frame -->
+  <rect x="0" y="0" width="512" height="512" fill="#091b10"/>
+  
+  <!-- Main Pixel Canvas Card -->
+  <rect x="24" y="24" width="464" height="464" rx="32" fill="#133c24" stroke="#000000" stroke-width="8"/>
+  <rect x="32" y="32" width="448" height="390" fill="#1a4d2e"/>
+  
+  <!-- Dirt Base at Bottom -->
+  <rect x="32" y="400" width="448" height="80" fill="#3b2313"/>
+  <rect x="32" y="390" width="448" height="10" fill="#183422"/>
+  <rect x="32" y="420" width="448" height="12" fill="#29180d"/>
+  
+  <!-- Background Pixel Pattern Details -->
+  <rect x="60" y="60" width="24" height="24" fill="#225c38"/>
+  <rect x="400" y="80" width="28" height="28" fill="#225c38"/>
+  <rect x="70" y="300" width="20" height="20" fill="#225c38"/>
+  <rect x="420" y="280" width="24" height="24" fill="#225c38"/>
 
-  <rect x="96" y="360" width="320" height="90" rx="20" fill="#059669" stroke="#34d399" stroke-width="6"/>
-  <text x="256" y="420" font-family="sans-serif" font-weight="bold" font-size="44" fill="#ffffff" text-anchor="middle">★ MATH FUN ★</text>
+  <!-- KiDZCalc Header Text with Black Outline -->
+  <!-- Outline Shadow -->
+  <text x="259" y="113" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="68" fill="#000000" text-anchor="middle" letter-spacing="1">KiDZCalc</text>
+  <text x="253" y="113" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="68" fill="#000000" text-anchor="middle" letter-spacing="1">KiDZCalc</text>
+  <text x="256" y="116" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="68" fill="#000000" text-anchor="middle" letter-spacing="1">KiDZCalc</text>
+  <text x="256" y="110" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="68" fill="#000000" text-anchor="middle" letter-spacing="1">KiDZCalc</text>
+  <!-- Foreground White Text -->
+  <text x="256" y="112" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="68" fill="#ffffff" text-anchor="middle" letter-spacing="1">KiDZCalc</text>
+
+  <!-- TOP LEFT: Drama / Comedy Mask -->
+  <g transform="translate(48, 140)">
+    <rect x="4" y="4" width="92" height="108" rx="20" fill="#000000"/>
+    <path d="M 12,12 Q 50,0 88,12 Q 100,60 88,100 Q 50,112 12,100 Q 0,60 12,12 Z" fill="#ffffff" stroke="#000000" stroke-width="6"/>
+    <!-- Eyebrows -->
+    <path d="M 22,32 Q 34,22 46,32" stroke="#000000" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M 54,32 Q 66,22 78,32" stroke="#000000" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- Eyes -->
+    <ellipse cx="34" cy="44" rx="8" ry="10" fill="#000000"/>
+    <ellipse cx="66" cy="44" rx="8" ry="10" fill="#000000"/>
+    <!-- Laughing Open Mouth -->
+    <path d="M 24,62 Q 50,102 76,62 Z" fill="#000000" stroke="#000000" stroke-width="2"/>
+    <path d="M 32,76 Q 50,96 68,76 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- TOP RIGHT: Happy Yellow Star -->
+  <g transform="translate(346, 146)">
+    <!-- Black Outline -->
+    <polygon points="56,0 72,36 112,42 82,72 90,112 56,92 22,112 30,72 0,42 40,36" fill="#000000" transform="scale(1.08) translate(-4, -4)"/>
+    <!-- Star Body -->
+    <polygon points="56,0 72,36 112,42 82,72 90,112 56,92 22,112 30,72 0,42 40,36" fill="#ffcc00" stroke="#ff9900" stroke-width="4"/>
+    <!-- Eyes -->
+    <rect x="38" y="48" width="8" height="14" fill="#000000" rx="3"/>
+    <rect x="66" y="48" width="8" height="14" fill="#000000" rx="3"/>
+    <!-- Cheeks -->
+    <ellipse cx="32" cy="66" rx="6" ry="4" fill="#ff77aa"/>
+    <ellipse cx="80" cy="66" rx="6" ry="4" fill="#ff77aa"/>
+    <!-- Smile -->
+    <path d="M 46,64 Q 56,76 66,64" stroke="#000000" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- BOTTOM LEFT: Golden Royal Crown -->
+  <g transform="translate(42, 280)">
+    <!-- Black Outline -->
+    <path d="M 8,72 L 20,16 L 48,46 L 68,8 L 88,46 L 116,16 L 128,72 Z" fill="#000000" stroke="#000000" stroke-width="10" stroke-linejoin="miter"/>
+    <!-- Crown Gold -->
+    <path d="M 12,70 L 22,22 L 48,48 L 68,14 L 88,48 L 114,22 L 124,70 Z" fill="#ffc107"/>
+    <rect x="12" y="70" width="112" height="24" rx="4" fill="#ffa000" stroke="#000000" stroke-width="4"/>
+    <!-- Gems -->
+    <circle cx="28" cy="82" r="6" fill="#1e88e5" stroke="#000000" stroke-width="2"/>
+    <circle cx="68" cy="82" r="7" fill="#1e88e5" stroke="#000000" stroke-width="2"/>
+    <circle cx="108" cy="82" r="6" fill="#1e88e5" stroke="#000000" stroke-width="2"/>
+  </g>
+
+  <!-- BOTTOM RIGHT: Red TNT Explosive -->
+  <g transform="translate(362, 268)">
+    <!-- Fuse -->
+    <path d="M 44,24 Q 50,8 36,0" stroke="#8d6e63" stroke-width="6" fill="none"/>
+    <!-- Spark -->
+    <circle cx="34" cy="0" r="6" fill="#ff5722"/>
+    <circle cx="34" cy="0" r="3" fill="#ffeb3b"/>
+    <!-- TNT Bundle -->
+    <rect x="8" y="24" width="76" height="110" rx="8" fill="#c62828" stroke="#000000" stroke-width="6"/>
+    <line x1="33" y1="24" x2="33" y2="134" stroke="#000000" stroke-width="4"/>
+    <line x1="58" y1="24" x2="58" y2="134" stroke="#000000" stroke-width="4"/>
+    <!-- Label Banner -->
+    <rect x="12" y="60" width="68" height="36" fill="#ffffff" stroke="#000000" stroke-width="4"/>
+    <text x="46" y="86" font-family="'Impact', sans-serif" font-weight="bold" font-size="24" fill="#000000" text-anchor="middle">TNT</text>
+  </g>
+
+  <!-- CENTER: CUTE TEAL CALCULATOR CHARACTER -->
+  <g transform="translate(152, 150)">
+    <!-- Outer Outline -->
+    <rect x="-6" y="-6" width="220" height="270" rx="28" fill="#000000"/>
+    <!-- Main Body -->
+    <rect x="0" y="0" width="208" height="258" rx="22" fill="#24789b" stroke="#18526b" stroke-width="6"/>
+    <rect x="8" y="8" width="192" height="12" rx="4" fill="#3ea0c8" opacity="0.6"/>
+
+    <!-- Screen Section -->
+    <rect x="18" y="22" width="172" height="92" rx="12" fill="#8bc34a" stroke="#000000" stroke-width="6"/>
+    <rect x="24" y="28" width="160" height="80" rx="8" fill="#9ccc65"/>
+
+    <!-- Eyes -->
+    <ellipse cx="64" cy="58" rx="14" ry="18" fill="#000000"/>
+    <ellipse cx="144" cy="58" rx="14" ry="18" fill="#000000"/>
+    <!-- Eye Highlights -->
+    <circle cx="60" cy="52" r="5" fill="#ffffff"/>
+    <circle cx="140" cy="52" r="5" fill="#ffffff"/>
+
+    <!-- Cheeks -->
+    <rect x="30" y="74" width="20" height="8" rx="4" fill="#f48fb1"/>
+    <rect x="158" y="74" width="20" height="8" rx="4" fill="#f48fb1"/>
+
+    <!-- Cute Smile Mouth -->
+    <path d="M 84,76 Q 104,100 124,76 Z" fill="#000000"/>
+    <path d="M 92,86 Q 104,100 116,86 Z" fill="#e91e63"/>
+
+    <!-- Keypad Grid -->
+    <!-- Row 1: Button '1', Button '2', Button '=' Top -->
+    <rect x="20" y="128" width="48" height="48" rx="8" fill="#388e3c" stroke="#000000" stroke-width="4"/>
+    <text x="44" y="162" font-family="'Impact', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle">1</text>
+
+    <rect x="76" y="128" width="48" height="48" rx="8" fill="#6d4c41" stroke="#000000" stroke-width="4"/>
+    <text x="100" y="162" font-family="'Impact', sans-serif" font-size="30" fill="#ffffff" text-anchor="middle">2</text>
+
+    <!-- Orange '=' Tall Button -->
+    <rect x="132" y="128" width="56" height="108" rx="10" fill="#ef6c00" stroke="#000000" stroke-width="4"/>
+    <text x="160" y="194" font-family="'Impact', sans-serif" font-size="44" fill="#ffffff" text-anchor="middle">=</text>
+
+    <!-- Row 2: Button '+', Button '-' -->
+    <rect x="20" y="188" width="48" height="48" rx="8" fill="#388e3c" stroke="#000000" stroke-width="4"/>
+    <text x="44" y="222" font-family="'Impact', sans-serif" font-size="36" fill="#ffffff" text-anchor="middle">+</text>
+
+    <rect x="76" y="188" width="48" height="48" rx="8" fill="#ef6c00" stroke="#000000" stroke-width="4"/>
+    <text x="100" y="220" font-family="'Impact', sans-serif" font-size="36" fill="#ffffff" text-anchor="middle">-</text>
+  </g>
 </svg>
