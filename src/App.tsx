@@ -290,7 +290,7 @@ export default function App() {
 
   return (
     <div
-      className={`min-h-screen w-full bg-gradient-to-br ${skin.bgGradient} flex flex-col items-center justify-between p-2 sm:p-4 md:p-6 transition-colors duration-500 font-sans antialiased`}
+      className={`min-h-screen w-full bg-gradient-to-br ${skin.bgGradient} flex flex-col items-center justify-between p-3 sm:p-5 md:p-6 pb-6 transition-colors duration-500 font-sans antialiased`}
     >
       {/* App Header Bar for Desktop/Web View */}
       <header className="w-full max-w-md flex items-center justify-between py-2 px-3 text-white/90">
@@ -394,26 +394,22 @@ export default function App() {
             }}
           />
 
-          {/* Android Navigation Bar */}
-          <div className="flex items-center justify-center gap-8 pt-3 mt-1 opacity-60 text-white">
-            <div className="w-3 h-3 border-l-2 border-b-2 border-white rotate-45" title="Back" />
-            <div className="w-3.5 h-3.5 border-2 border-white rounded-full" title="Home" />
-            <div className="w-3 h-3 border-2 border-white rounded-sm" title="Recents" />
-          </div>
+
         </div>
       </main>
 
       {/* Footer Info Badge */}
-      <footer className="w-full max-w-md py-2 text-center text-xs text-white/60 font-sans flex items-center justify-between px-2">
-        <span className="flex items-center gap-1 text-emerald-300">
-          <ShieldCheck className="w-3.5 h-3.5" /> 100% Free • Zero Ads • Kid Safe
+      <footer className="w-full max-w-md my-3 py-3 px-4 text-xs text-white/80 font-sans flex flex-wrap items-center justify-between gap-2 rounded-xl bg-black/20 backdrop-blur-sm border border-white/10">
+        <span className="flex items-center gap-1.5 text-emerald-300 font-medium">
+          <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+          <span>100% Free • Zero Ads • Kid Safe</span>
         </span>
         <button
           onClick={nextQuestion}
-          className="flex items-center gap-1 hover:text-white transition font-medium text-amber-300"
+          className="flex items-center gap-1.5 hover:text-white transition font-bold text-amber-300 bg-white/10 hover:bg-white/20 px-2.5 py-1 rounded-lg"
           title="Skip to next problem"
         >
-          <RefreshCw className="w-3 h-3" />
+          <RefreshCw className="w-3.5 h-3.5" />
           <span>New Problem</span>
         </button>
       </footer>

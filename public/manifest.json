@@ -7,7 +7,11 @@
   "orientation": "portrait",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",
-  "categories": ["education", "kids", "games"],
+  "categories": [
+    "education",
+    "kids",
+    "games"
+  ],
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/bpospichil/KiDZCalc/refs/heads/main/public/icon-192.png",
@@ -21,5 +25,7 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ]
+  ],
+  "scope": "kid.pospichil.com.br",
+  "lang": "en"
 }
